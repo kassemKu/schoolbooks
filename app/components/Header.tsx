@@ -16,7 +16,7 @@ export const Header = () => {
         <ul dir="rtl" className="menu menu-horizontal px-1">
           <li className="flex-row-reverse space-x-1 md:space-x-14">
             <details>
-              <summary className="px-2 md:px-3 text-xs md:text-sm">
+              <summary className="px-1 md:px-3 text-xs md:text-sm">
                 المشرفين
               </summary>
               <ul className="p-2 bg-base-100 rounded-t-none text-slate-600">
@@ -29,7 +29,7 @@ export const Header = () => {
               </ul>
             </details>
             <details>
-              <summary className="px-2 md:px-3 text-xs md:text-sm">
+              <summary className="px-1 md:px-3 text-xs md:text-sm">
                 المشاركين
               </summary>
               <ul className="p-2 bg-base-100 rounded-t-none text-slate-600">
