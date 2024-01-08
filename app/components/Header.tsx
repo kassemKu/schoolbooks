@@ -14,7 +14,7 @@ export const Header = () => {
       </div>
       <div className="flex-none">
         <ul dir="rtl" className="menu menu-horizontal px-1">
-          <li className="flex-row-reverse space-x-2 md:space-x-14">
+          <li className="flex-row-reverse space-x-1 md:space-x-14">
             <details>
               <summary className="px-2 md:px-3 text-xs md:text-sm">
                 المشرفين
