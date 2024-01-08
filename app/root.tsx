@@ -53,7 +53,9 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <main>
-      <header>{/* <Header /> */}</header>
+      <header>
+        <Header />
+      </header>
       <section>{children}</section>
       <footer className="footer p-10 bg-neutral text-neutral-content mt-12">
         <nav>

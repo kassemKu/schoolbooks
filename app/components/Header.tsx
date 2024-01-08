@@ -5,15 +5,20 @@ export const Header = () => {
   return (
     <div className="navbar bg-neutral text-neutral-content font-arabic">
       <div className="flex-1">
-        <Link to={"/"} className="btn btn-ghost text-xl uppercase font-arabic">
+        <Link
+          to={"/"}
+          className="btn btn-ghost text-base md:text-xl uppercase font-arabic"
+        >
           ارسال العلم لاخواننا في غزة
         </Link>
       </div>
       <div className="flex-none">
         <ul dir="rtl" className="menu menu-horizontal px-1">
-          <li className="flex-row-reverse space-x-14">
+          <li className="flex-row-reverse space-x-2 md:space-x-14">
             <details>
-              <summary>المشرفين</summary>
+              <summary className="px-2 md:px-3 text-xs md:text-sm">
+                المشرفين
+              </summary>
               <ul className="p-2 bg-base-100 rounded-t-none text-slate-600">
                 <li>
                   <a>الاستاذ تامر شتو</a>
@@ -24,7 +29,9 @@ export const Header = () => {
               </ul>
             </details>
             <details>
-              <summary>المشاركين</summary>
+              <summary className="px-2 md:px-3 text-xs md:text-sm">
+                المشاركين
+              </summary>
               <ul className="p-2 bg-base-100 rounded-t-none text-slate-600">
                 <li>
                   <a>قاسم كليب</a>
@@ -45,7 +52,10 @@ export const Header = () => {
             </details>
           </li>
         </ul>
-        <label htmlFor="my_modal_6" className="btn font-arabic">
+        <label
+          htmlFor="my_modal_6"
+          className="btn font-arabic btn-sm md:btn-md"
+        >
           اهداف المشروع
         </label>
 
