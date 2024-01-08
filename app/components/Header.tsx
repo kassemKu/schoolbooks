@@ -7,7 +7,7 @@ export const Header = () => {
       <div className="flex-1">
         <Link
           to={"/"}
-          className="btn btn-ghost text-base md:text-xl uppercase font-arabic"
+          className="btn btn-ghost text-xs md:text-xl uppercase font-arabic"
         >
           ارسال العلم لاخواننا في غزة
         </Link>
