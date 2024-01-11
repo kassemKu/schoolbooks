@@ -31,7 +31,7 @@ export const Header = () => {
         <NavigationMenu>
           <NavigationMenuList className="space-x-2 md:space-x-4">
             <NavigationMenuItem>
-              <NavigationMenuTrigger>المشرفين</NavigationMenuTrigger>
+              <NavigationMenuTrigger>باشراف</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul dir="rtl" className="menu w-48 items-center">
                   <li>
@@ -51,16 +51,13 @@ export const Header = () => {
                     <a>قاسم كليب</a>
                   </li>
                   <li>
-                    <a>معتز الدروبي الورع</a>
+                    <a>معتز الدروبي</a>
                   </li>
                   <li>
                     <a>اسامة رحمون</a>
                   </li>
                   <li>
                     <a>عبيدة عمار</a>
-                  </li>
-                  <li>
-                    <a>محمد شمس الدين</a>
                   </li>
                 </ul>
               </NavigationMenuContent>
@@ -75,14 +72,12 @@ export const Header = () => {
           </DrawerTrigger>
           <DrawerContent>
             <div className="mx-auto w-full max-w-sm">
-              <DrawerHeader>
-                <DrawerTitle>Move Goal</DrawerTitle>
-              </DrawerHeader>
               <div
                 className="p-4 font-arabic prose prose-sm md:prose-base"
                 dir="rtl"
               >
                 <ul>
+                  <h4>بالنسبة لفلسطين</h4>
                   <li>
                     محاولة ارسال العلم الي اخواننا المستضعفين و لاسيما مادة
                     الرياضيات التي تفيدهم في الهندسة ليعمرو مبانيهم المحطمة
@@ -90,6 +85,7 @@ export const Header = () => {
                     سنعلمهم اياها باللغة الانجليزية لتقوية لغتهم للتعامل مع
                     الاحتلال في حال الهدنة و ماشابه
                   </li>
+                  <h4>بالنسبة للبنان</h4>
                   <li>
                     محاولة ارسال العلم الي اخواننا المستضعفين و لاسيما مادة
                     الرياضيات التي تفيدهم في الهندسة ليعمرو مبانيهم المحطمة
