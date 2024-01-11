@@ -27,9 +27,9 @@ export const Header = () => {
           ارسال العلم لاخواننا في غزة
         </Link>
       </div>
-      <div className="flex-none flex items-center space-x-8">
+      <div className="flex-none flex items-center space-x-2 md:space-x-8">
         <NavigationMenu>
-          <NavigationMenuList className="space-x-4">
+          <NavigationMenuList className="space-x-2 md:space-x-4">
             <NavigationMenuItem>
               <NavigationMenuTrigger>المشرفين</NavigationMenuTrigger>
               <NavigationMenuContent>
