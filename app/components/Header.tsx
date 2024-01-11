@@ -24,7 +24,7 @@ export const Header = () => {
           to={"/"}
           className="btn btn-ghost text-xs md:text-xl uppercase font-arabic"
         >
-          ارسال العلم لاخواننا في غزة
+          الى غزة
         </Link>
       </div>
       <div className="flex-none flex items-center space-x-2 md:space-x-8">
