@@ -77,11 +77,11 @@ export const Header = () => {
             <div className="mx-auto w-full max-w-sm">
               <DrawerHeader>
                 <DrawerTitle>Move Goal</DrawerTitle>
-                <DrawerDescription>
-                  Set your daily activity goal.
-                </DrawerDescription>
               </DrawerHeader>
-              <div className="p-4 font-arabic prose" dir="rtl">
+              <div
+                className="p-4 font-arabic prose prose-sm md:prose-base"
+                dir="rtl"
+              >
                 <ul>
                   <li>
                     محاولة ارسال العلم الي اخواننا المستضعفين و لاسيما مادة
@@ -102,34 +102,6 @@ export const Header = () => {
             </div>
           </DrawerContent>
         </Drawer>
-        {/* <label
-          htmlFor="my_modal_6"
-          className="btn font-arabic btn-sm md:btn-md"
-        >
-          اهداف المشروع
-        </label>
-
-        <input type="checkbox" id="my_modal_6" className="modal-toggle" />
-        <div
-          className="modal text-slate-700 font-arabic"
-          role="dialog"
-          dir="rtl"
-        >
-          <div className="modal-box">
-            <h3 className="font-bold text-lg">من اهم اهداف هذا المشروع هي</h3>
-            <p className="py-4">
-              محاولة ارسال العلم الي اخواننا المستضعفين و لاسيما مادة الرياضيات
-              التي تفيدهم في الهندسة ليعمرو مبانيهم المحطمة ويبنوا مستقبلهم الذي
-              هو حق لكل طفل ! بالاضافه الى اننا سنعلمهم اياها باللغة الانجليزية
-              لتقوية لغتهم للتعامل مع الاحتلال في حال الهدنة و ماشابه
-            </p>
-            <div className="modal-action">
-              <label htmlFor="my_modal_6" className="btn text-slate-600">
-                اغلاق
-              </label>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );
