@@ -1,5 +1,20 @@
 import { Link } from "@remix-run/react";
 import React from "react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "./ui/navigation-menu";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "./ui/drawer";
 
 export const Header = () => {
   return (
@@ -12,47 +27,82 @@ export const Header = () => {
           ارسال العلم لاخواننا في غزة
         </Link>
       </div>
-      <div className="flex-none">
-        <ul dir="rtl" className="menu menu-horizontal px-1">
-          <li className="flex-row-reverse space-x-1 md:space-x-14">
-            <details>
-              <summary className="px-1 md:px-3 text-xs md:text-sm">
-                المشرفين
-              </summary>
-              <ul className="p-2 bg-base-100 rounded-t-none text-slate-600">
-                <li>
-                  <a>الاستاذ تامر شتو</a>
-                </li>
-                <li>
-                  <a>الاستاذ بلابلا</a>
-                </li>
-              </ul>
-            </details>
-            <details>
-              <summary className="px-1 md:px-3 text-xs md:text-sm">
-                المشاركين
-              </summary>
-              <ul className="p-2 bg-base-100 rounded-t-none text-slate-600">
-                <li>
-                  <a>قاسم كليب</a>
-                </li>
-                <li>
-                  <a>معتز الدروبي الورع</a>
-                </li>
-                <li>
-                  <a>اسامة رحمون</a>
-                </li>
-                <li>
-                  <a>عبيدة عمار</a>
-                </li>
-                <li>
-                  <a>محمد شمس الدين</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-        <label
+      <div className="flex-none flex items-center space-x-8">
+        <NavigationMenu>
+          <NavigationMenuList className="space-x-4">
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>المشرفين</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul dir="rtl" className="menu w-48 items-center">
+                  <li>
+                    <a>الاستاذ تامر شتو</a>
+                  </li>
+                  <li>
+                    <a>الاستاذ تامر شتو</a>
+                  </li>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>فريق العمل</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul dir="rtl" className="menu w-56 items-center">
+                  <li>
+                    <a>قاسم كليب</a>
+                  </li>
+                  <li>
+                    <a>معتز الدروبي الورع</a>
+                  </li>
+                  <li>
+                    <a>اسامة رحمون</a>
+                  </li>
+                  <li>
+                    <a>عبيدة عمار</a>
+                  </li>
+                  <li>
+                    <a>محمد شمس الدين</a>
+                  </li>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+        <Drawer>
+          <DrawerTrigger asChild>
+            <button className="btn font-arabic btn-sm md:btn-md">
+              اهداف المشروع
+            </button>
+          </DrawerTrigger>
+          <DrawerContent>
+            <div className="mx-auto w-full max-w-sm">
+              <DrawerHeader>
+                <DrawerTitle>Move Goal</DrawerTitle>
+                <DrawerDescription>
+                  Set your daily activity goal.
+                </DrawerDescription>
+              </DrawerHeader>
+              <div className="p-4 font-arabic prose" dir="rtl">
+                <ul>
+                  <li>
+                    محاولة ارسال العلم الي اخواننا المستضعفين و لاسيما مادة
+                    الرياضيات التي تفيدهم في الهندسة ليعمرو مبانيهم المحطمة
+                    ويبنوا مستقبلهم الذي هو حق لكل طفل ! بالاضافه الى اننا
+                    سنعلمهم اياها باللغة الانجليزية لتقوية لغتهم للتعامل مع
+                    الاحتلال في حال الهدنة و ماشابه
+                  </li>
+                  <li>
+                    محاولة ارسال العلم الي اخواننا المستضعفين و لاسيما مادة
+                    الرياضيات التي تفيدهم في الهندسة ليعمرو مبانيهم المحطمة
+                    ويبنوا مستقبلهم الذي هو حق لكل طفل ! بالاضافه الى اننا
+                    سنعلمهم اياها باللغة الانجليزية لتقوية لغتهم للتعامل مع
+                    الاحتلال في حال الهدنة و ماشابه
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </DrawerContent>
+        </Drawer>
+        {/* <label
           htmlFor="my_modal_6"
           className="btn font-arabic btn-sm md:btn-md"
         >
@@ -79,7 +129,7 @@ export const Header = () => {
               </label>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
