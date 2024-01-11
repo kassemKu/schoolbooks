@@ -21,6 +21,7 @@ export const Header = () => {
     <div className="navbar bg-neutral text-neutral-content font-arabic">
       <div className="flex-1">
         <Link
+          dir="rtl"
           to={"/"}
           className="btn btn-ghost text-sm md:text-xl uppercase font-arabic"
         >
