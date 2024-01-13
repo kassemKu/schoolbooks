@@ -26,7 +26,9 @@ export default function Index() {
         <h4>Example:</h4>
         <div className="mockup-code max-w-[80vw] md:max-w-full">
           <pre className="xl:mt-0 xl:mb-0">
-            <code>3/7, 5/8, 15/17, 14/21, and 121/360 are all fractions.</code>
+            <code>
+              3 &#8213; 7, 5/8, 15/17, 14/21, and 121/360 are all fractions.
+            </code>
           </pre>
           <pre className="xl:mt-0 xl:mb-0">
             <code>3.5/4 8/1.2 0.9/4.5 are not fractions.</code>

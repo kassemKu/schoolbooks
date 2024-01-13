@@ -36,10 +36,10 @@ export const Header = () => {
               <NavigationMenuContent>
                 <ul dir="rtl" className="menu w-48 items-center">
                   <li>
-                    <a>الاستاذ تامر شتو</a>
+                    <a>الاستاذ تامر شتور</a>
                   </li>
                   <li>
-                    <a>الاستاذ تامر شتو</a>
+                    <a>الاستاذ تامر شتور</a>
                   </li>
                 </ul>
               </NavigationMenuContent>
